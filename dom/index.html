@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link  rel="stylesheet" href="style.css" >
+</head>
+<body id="pa">
+    <p>counter:<span id="mes">0</span></p>
+    <button id="me">click here</button>
+    <button id="mess">click here</button>
+    <script>
+       const s=document.getElementById("mes")
+       const k=document.getElementById("me")
+       const k1=document.getElementById("mess")
+       let count=0;
+       k.addEventListener("click",function(){
+        
+        count++;
+        s.innerHTML=count;
+
+       })
+       k1.addEventListener("click",function(){
+        
+        count--;
+        s.innerHTML=count;
+
+       })
+       
+    </script>
+
+</body>
+</html>

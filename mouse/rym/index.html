@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="pa">
+    
+
+    <div id="keyboard">
+
+    </div>
+    <script>
+        document.addEventListener("keydown",function(event){
+            console.log(event.key);
+            const keyboard=document.getElementById("keyboard");
+const keypressed=event.key;
+const elem=document.createElement("p");
+elem.textContent= `key pressed:  ${keypressed}`;
+keyboard.appendChild(elem);
+
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="mous">
+        hover hov;
+    </div> 
+    
+    <script>
+        const gets=document.getElementById("mous")
+        function changeColorOnHover(){
+            gets.style.backgroundColor="blue";
+
+        }
+        function changeColorOnExit(){
+            gets.style.backgroundColor="white";
+
+        }
+        gets.addEventListener("mouseenter",changeColorOnHover);
+        gets.addEventListener("mouseleave",changeColorOnExit);
+    </script>
+</body>
+</html>
